@@ -74,7 +74,7 @@ def get_all_children(group_name):
 <h3>SQL approach</h3>
 <p>
     We'd like to take a similar approach as before, only in SQL. In come <i>Common Table Expressions (CTE's)</i>, or in postgres, <code>WITH</code> queries.
-    The (http://www.postgresql.org/docs/8.4/static/queries-with.html)[postgres docs] have a great resource on how these work, but I'll give a short overview here.
+    The [postgres doc]: http://www.postgresql.org/docs/8.4/static/queries-with.html "postgres docs" have a great resource on how these work, but I'll give a short overview here.
     <i>CTE's</i> are like sub-queries. Let's say we want the <b>user names of all members of lab groups (A or B)</b>. In postgres:
 <pre><code>SELECT DISTINCT u.user_name
 FROM (
